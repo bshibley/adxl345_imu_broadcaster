@@ -36,6 +36,9 @@ ament_target_dependencies(
   ${THIS_PACKAGE_INCLUDE_DEPENDS}
 )
 
+# Link i2c library to adxl345_imu_broadcaster target
+target_link_libraries(adxl345_imu_broadcaster PUBLIC i2c)
+
 # Causes the visibility macros to use dllexport rather than dllimport,
 # which is appropriate when building the dll but not consuming it.
 target_compile_definitions(${PROJECT_NAME} PRIVATE "ADXL345_IMU_BROADCASTER_BUILDING_DLL")
