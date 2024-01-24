@@ -1,0 +1,9 @@
+<library path="adxl345_imu_broadcaster">
+  <class name="adxl345_imu_broadcaster/ADXL345Hardware"
+         type="adxl345_imu_broadcaster::ADXL345Hardware"
+         base_class_type="hardware_interface::SensorInterface">
+    <description>
+      ADXL345Hardware is a ros2_control sensor hardware interface-type. It provides an accelerometer state interface for the ADXL345 accelerometer.
+    </description>
+  </class>
+</library>
